@@ -1,6 +1,7 @@
 function checkout(){
     const cartDiv = document.getElementById("cart");
     const itemContainers = cartDiv.querySelectorAll(".item-container");
+    let total_price = 0;
 
     active_cart = [];
     itemContainers.forEach(itemContainer => {
@@ -15,5 +16,9 @@ function checkout(){
         active_cart.push(item);
     });
     
+    active_cart.forEach(i => {
+        total_price += i[1]*i[2];
+    })
+    active_cart.push(total_price);
     console.log(active_cart);
 };
