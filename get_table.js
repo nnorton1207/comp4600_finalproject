@@ -46,14 +46,14 @@ let count = 0;
 
     const quant_span = document.createElement('span');
     quant_span.innerHTML = 0;
-    let span_id = element.menu_item_id + element.menu_item_category;
+    let span_id = element.menu_item_id + 'q';
     quant_span.id = span_id;
 
     const inc = document.createElement('button');
     inc.className = "btn";
     inc.innerHTML = "+";
     inc.addEventListener('click', function() {
-      let span_id = element.menu_item_id + element.menu_item_category;
+      let span_id = element.menu_item_id + 'q';
       let quant_span = document.getElementById(span_id);
       let count = quant_span.innerHTML;
       count++;
@@ -121,3 +121,4 @@ let count = 0;
       cart.appendChild(clone);
     });
 }
+
