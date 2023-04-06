@@ -1,0 +1,66 @@
+[
+    {
+      "menu_item_id": 1,
+      "menu_item_name": "Grilled Chicken Sandwich",
+      "menu_item_description": "Grilled chicken breast, lettuce, tomato, and mayo on a toasted bun.",
+      "menu_item_price": 9.99,
+      "menu_item_category": "Sandwiches",
+      "menu_item_image": "https://example.com/grilled_chicken_sandwich.jpg"
+    },
+    {
+      "menu_item_id": 2,
+      "menu_item_name": "Caesar Salad",
+      "menu_item_description": "Romaine lettuce, parmesan cheese, croutons, and Caesar dressing.",
+      "menu_item_price": 7.99,
+      "menu_item_category": "Salads",
+      "menu_item_image": "https://example.com/caesar_salad.jpg"
+    },
+    {
+      "menu_item_id": 3,
+      "menu_item_name": "Pesto Pasta",
+      "menu_item_description": "Penne pasta in a creamy pesto sauce with cherry tomatoes and Parmesan cheese.",
+      "menu_item_price": 12.99,
+      "menu_item_category": "Pasta",
+      "menu_item_image": "https://example.com/pesto_pasta.jpg"
+    },
+    {
+      "menu_item_id": 4,
+      "menu_item_name": "Cheeseburger",
+      "menu_item_description": "Beef patty, cheddar cheese, lettuce, tomato, and mayo on a toasted bun.",
+      "menu_item_price": 10.99,
+      "menu_item_category": "Burgers",
+      "menu_item_image": "https://example.com/cheeseburger.jpg"
+    },
+    {
+      "menu_item_id": 5,
+      "menu_item_name": "Margherita Pizza",
+      "menu_item_description": "Fresh mozzarella cheese, sliced tomatoes, and basil on a thin crust.",
+      "menu_item_price": 12.99,
+      "menu_item_category": "Pizzas",
+      "menu_item_image": "https://example.com/margherita_pizza.jpg"
+    },
+    {
+      "menu_item_id": 6,
+      "menu_item_name": "Fish and Chips",
+      "menu_item_description": "Beer-battered cod with French fries and tartar sauce.",
+      "menu_item_price": 14.99,
+      "menu_item_category": "Seafood",
+      "menu_item_image": "https://example.com/fish_and_chips.jpg"
+    },
+    {
+      "menu_item_id": 7,
+      "menu_item_name": "Spicy Tuna Roll",
+      "menu_item_description": "Sushi roll with spicy tuna, avocado, and cucumber.",
+      "menu_item_price": 8.99,
+      "menu_item_category": "Sushi",
+      "menu_item_image": "https://example.com/spicy_tuna_roll.jpg"
+    },
+    {
+      "menu_item_id": 8,
+      "menu_item_name": "Chicken caesar Wrap",
+      "menu_item_description": "Grilled chicken, romaine lettuce, parmesan cheese.",
+      "menu_item_price": 7.99,
+      "menu_item_category": "Sandwiches",
+      "menu_item_image": "https://example.com/chicken_caesar_wrap.jpg"
+    }
+  ]
