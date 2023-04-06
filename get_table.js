@@ -64,7 +64,7 @@ let count = 0;
     dec.className = "btn";
     dec.innerHTML = "-";
     dec.addEventListener('click', function() {
-      let span_id = element.menu_item_id + element.menu_item_category;
+      let span_id = element.menu_item_id + 'q';
       let quant_span = document.getElementById(span_id);
       let count = quant_span.innerHTML;
       let quantity = quant_span.innerHTML;
