@@ -28,7 +28,7 @@ function checkout_screen(){
     const final_con = document.createElement('div');
     final_con.className = 'final-container';
     head = document.createElement('h1');
-    head.className = 'header';
+    head.className = 'checkout-heading';
     head.innerText = 'Final Checkout';
     final_con.appendChild(head);
     var itembox = document.createElement('div');
