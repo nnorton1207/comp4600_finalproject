@@ -18,7 +18,10 @@ let count = 0;
 
     const img_con = document.createElement('div');
     img_con.className = "image-container";
+    var src_name = ele.id + '.jpg';
+
     const place = document.createElement('img');
+    place.src = src_name;
     img_con.appendChild(place);
     ele.appendChild(img_con);
 
