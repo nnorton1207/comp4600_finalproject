@@ -43,6 +43,8 @@ function checkout_screen(){
     final_con.appendChild(formdiv);
 
     const confirm = document.createElement('button');
+    confirm.type = 'submit';
+    confirm.form = 'chkform';
     const cancel = document.createElement('button');
     confirm.innerText = 'Confirm order';
     confirm.className = 'confirm-btn';
@@ -69,6 +71,7 @@ function checkout_form(chkcart) {
     var form = document.createElement("form");
     form.setAttribute("method", "post");
     form.setAttribute("action", "");
+    form.id = "chkform";
 
     var name = document.createElement("input");
     name.setAttribute("type", "text");
@@ -97,14 +100,12 @@ function checkout_form(chkcart) {
     event.preventDefault(); // Prevent the form from submitting normally
 
     // Create a new DynamoDB instance
- 
-    var dynamodb = new AWS.DynamoDB({
+    var dynamodb = new DynamoDB({
         region: 'us-east-1'
       });
-
     // Define the parameters for the DynamoDB PutItem operation
     var params = {
-      TableName: "Restaurant",
+      TableName: "my-table-name",
       Item: {
         "Name": { S: name.value },
         "Tel": { S: tel.value },
