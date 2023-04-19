@@ -44,7 +44,7 @@ function checkout_screen(){
 
     const confirm = document.createElement('button');
     confirm.type = 'submit';
-    confirm.form = 'chkform';
+    confirm.setAttribute('form', 'chkform');
     const cancel = document.createElement('button');
     confirm.innerText = 'Confirm order';
     confirm.className = 'confirm-btn';
