@@ -98,7 +98,9 @@ function checkout_form(chkcart) {
 
     // Create a new DynamoDB instance
  
-    var dynamodb = new AWS.DynamoDB();
+    var dynamodb = new DynamoDB({
+        region: 'us-east-1'
+      });
 
     // Define the parameters for the DynamoDB PutItem operation
     var params = {
