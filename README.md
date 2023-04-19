@@ -1,6 +1,6 @@
 # AWS Restaurant Menu
 
-A restaurant dining menu made and automatically deployed with AWS services
+A restaurant dining menu made and automatically deployed through the CLI with AWS services
 
 
 ## Tech Stack
