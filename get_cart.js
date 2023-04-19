@@ -98,7 +98,7 @@ function checkout_form(chkcart) {
 
     // Create a new DynamoDB instance
  
-    var dynamodb = new DynamoDB({
+    var dynamodb = new AWS.DynamoDB({
         region: 'us-east-1'
       });
 
