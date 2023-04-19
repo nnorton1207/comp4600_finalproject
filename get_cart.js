@@ -88,14 +88,11 @@ function checkout_form(chkcart) {
     email.setAttribute("name", "email");
     email.setAttribute("placeholder", "E-Mail address");
 
-    const submit = document.createElement('button');
-    submit.type = 'submit';
-
 
     form.appendChild(name);
     form.appendChild(email);
     form.appendChild(tel);
-    form.appendChild(submit);
+  
     form.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the form from submitting normally
     
