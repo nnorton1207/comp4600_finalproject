@@ -102,7 +102,7 @@ function checkout_form(chkcart) {
 
     // Define the parameters for the DynamoDB PutItem operation
     var params = {
-      TableName: "my-table-name",
+      TableName: "Restaurant",
       Item: {
         "Name": { S: name.value },
         "Tel": { S: tel.value },
