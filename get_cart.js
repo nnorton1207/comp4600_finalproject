@@ -100,8 +100,8 @@ function checkout_form(chkcart) {
     event.preventDefault(); // Prevent the form from submitting normally
     
     AWS.config.update({
-        accessKeyId: env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: env.AWS_SECRET_ACCESS_KEY,
+        accessKeyId: AKIAY3U2ZXRK5Z6B6BV7,
+        secretAccessKey: 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,
         region: 'us-east-1'
     });    
     // Create a new DynamoDB instance
