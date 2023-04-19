@@ -100,7 +100,7 @@ function checkout_form(chkcart) {
     event.preventDefault(); // Prevent the form from submitting normally
 
     // Create a new DynamoDB instance
-    var dynamodb = new DynamoDB({
+    var dynamodb = new AWS.DynamoDB({
         region: 'us-east-1'
       });
     // Define the parameters for the DynamoDB PutItem operation
