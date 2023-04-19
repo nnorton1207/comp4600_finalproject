@@ -88,7 +88,35 @@ function checkout_form(chkcart) {
     form.appendChild(name);
     form.appendChild(email);
     form.appendChild(tel);
+    
+    form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
+    // Create a new DynamoDB instance
+    var AWS = require("aws-sdk");
+    var dynamodb = new AWS.DynamoDB();
+
+    // Define the parameters for the DynamoDB PutItem operation
+    var params = {
+      TableName: "Restaurant",
+      Item: {
+        "Name": { S: name.value },
+        "Tel": { S: tel.value },
+        "Email": { S: email.value }
+      }
+    };
+
+    // Call the PutItem operation to add the form data to the DynamoDB table
+    dynamodb.putItem(params, function(err, data) {
+      if (err) {
+        console.error("Unable to add item to DynamoDB", err);
+      } else {
+        console.log("Item added to DynamoDB", data);
+      }
+    });
+  });
+  chkcart.append(form);
+}
     chkcart.append(form);
 }
 
