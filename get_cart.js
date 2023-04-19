@@ -97,7 +97,7 @@ function checkout_form(chkcart) {
     event.preventDefault(); // Prevent the form from submitting normally
 
     // Create a new DynamoDB instance
-    var AWS = require("aws-sdk");
+ 
     var dynamodb = new AWS.DynamoDB();
 
     // Define the parameters for the DynamoDB PutItem operation
