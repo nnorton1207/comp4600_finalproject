@@ -98,11 +98,16 @@ function checkout_form(chkcart) {
     form.appendChild(submit);
     form.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the form from submitting normally
-
+    
+    AWS.config.update({
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        region: 'us-east-1'
+    });    
     // Create a new DynamoDB instance
     var dynamodb = new AWS.DynamoDB({
         region: 'us-east-1'
-      });
+    });
     // Define the parameters for the DynamoDB PutItem operation
     var params = {
       TableName: "my-table-name",
